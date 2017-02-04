@@ -139,15 +139,17 @@ end
 ## SQL高级处理  
 ### 窗口函数 
 OLAP 函数， 对数据库数据进行实时分析处理  
-- <窗口函数> over ([partition by <列清单>] order by <排序用列清单>)  
+- <窗口函数> over ([partition by <列清单>] order by <排序用列清单>)    
+
   1. partition by 设定排序的对象范围，对表进行横向分组  
   2. order by 指定按照那一列、何种顺序进行排列，对每一组进行纵向排序     
   
 - 能够作为窗口函数使用的函数   
+
   1. 能够作为窗口函数的聚合函数(sum,avg,count,max,min)   
   2. rank,dense_rank,row_number 等专用窗口函数，专用窗口函数无须参数，括号中都是空的   
   
-- rank 是用来计算记录排序的函数 
+- rank 是用来计算记录排序的函数   
   1. rank 计算排序时，如果存在相同位次的记录，则会跳过之后的位次 1  1  1  4  
   2. dense_rank 即使存在相同位次的记录，也不会跳过之后的位次 1  1  1  2  
   3. row_number 赋予唯一的连续位次 1  2  3  4  
