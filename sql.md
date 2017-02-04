@@ -99,14 +99,13 @@
 - between .. and  范围查询  
 
 ### case 表达式
-- 格式： 
-``` case when <判断表达式> then <表达式>   
-         when <判断表达式> then <表达式>   
-         when <判断表达式> then <表达式>   
-         ...  
-         else <表达式>  
-    end  
-```
+- 格式：   
+case when <判断表达式> then <表达式>   
+     when <判断表达式> then <表达式>   
+     when <判断表达式> then <表达式>   
+     ...   
+     else <表达式>   
+end    
 
 - else 子句可以省略，建议不要省略；end不能省略
 - case 表达式支持嵌套 
